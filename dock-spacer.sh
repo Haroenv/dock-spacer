@@ -18,6 +18,7 @@ if [[ "$argument" ]]; then
 			argument="-h"
 		fi
 	fi
+	argument="-h"
 	if [[ "$argument" = "-h" ]]; then
 		echo "dock-spacer 0.1 (24 jan 2015)"
 		echo 
