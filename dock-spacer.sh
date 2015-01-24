@@ -14,13 +14,17 @@ if [[ "$argument" ]]; then
 			done
 		else
 			echo "missing argument"
-			#"$1"="-h"
+			$argument="-h"
 		fi
 	elif [[ "$argument"=="-h" ]]; then
-		echo "Help-info" #todo
-	else
-		echo def #defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+		echo "dock-spacer 0.1 (24 jan 2015)"
+		echo 
+		echo "usage: dock-spacer               add 1 spacer"
+		echo "   or: dock-spacer -n [number]   add a number of spacers"
+		echo "   or: dock-spacer -h            display this message"
 	fi
+else
+	echo def #defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 fi
 
 echo killall Dock #killall Dock
