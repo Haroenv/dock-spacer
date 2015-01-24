@@ -9,9 +9,8 @@ argument=$1
 if [[ "$argument" ]]; then
 	if [[ "$argument" = "-n" ]]; then
 		if [[ "$2" ]]; then
-			echo "added two spacers"
+			echo "added $2 spacers"
 			for (( i = 0; i < $2; i++ )); do
-				#echo def 
 				defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 			done
 			killall Dock
@@ -28,7 +27,6 @@ if [[ "$argument" ]]; then
 	fi
 else
 	echo "added a spacer"
-	#echo def 
 	defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 	killall Dock
 fi
