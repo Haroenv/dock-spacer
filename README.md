@@ -5,15 +5,19 @@ That command will add a new spacer to the OS X dock.
 
 # Installation
 
-TODO
+Clone this directory with 
+
+    git clone https://github.com/Haroenv/dock-spacer.git
+
+And then just run the script from the downloaded directory. 
 
 # Usage
 
-`dock-spacer` for one spacer. 
+`./dock-spacer` for one spacer. 
 
-`dock-spacer -n 2` for 2. 
+`./dock-spacer -n 2` for 2. 
 
-`dock-spacer -h` for help. 
+`./dock-spacer -h` for help. 
 
 #License
 
