@@ -18,6 +18,8 @@ if [[ "$argument" ]]; then
 		fi
 	elif [[ "$argument"=="-h" ]]; then
 		echo "Help-info" #todo
+	else
+		echo def #defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 	fi
 fi
 
