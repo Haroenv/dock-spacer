@@ -11,6 +11,8 @@ Clone this directory with
 
     git clone https://github.com/Haroenv/dock-spacer.git
 
+Or download the zip, if you play that way.
+
 And then just run the script from the downloaded directory. 
 
 # Usage
