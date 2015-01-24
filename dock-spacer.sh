@@ -20,7 +20,7 @@ if [[ "$argument" ]]; then
 	fi
 	argument="-h"
 	if [[ "$argument" = "-h" ]]; then
-		echo "dock-spacer 0.1 (24 jan 2015)"
+		echo "dock-spacer 1.0 (24 jan 2015)"
 		echo 
 		echo "usage: dock-spacer               add 1 spacer"
 		echo "   or: dock-spacer -n [number]   add a number of spacers"
