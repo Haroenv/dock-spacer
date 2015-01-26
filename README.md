@@ -29,6 +29,8 @@ Don't forget to give the file the proper permissions (to execute), by using `chm
 
 `./dock-spacer -h` for help. 
 
+To remove a spacer, just drag it out of the dock.
+
 #License
 
 Apache license 2.0. see [License](LICENSE) file.
