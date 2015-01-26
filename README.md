@@ -13,9 +13,15 @@ Clone this directory with
 
 Or download the zip, if you play that way.
 
+Another option is to `curl` the script 
+
+    curl -o dock-spacer.sh https://raw.githubusercontent.com/Haroenv/dock-spacer/master/dock-spacer.sh
+
 And then just run the script from the downloaded directory. 
 
 # Usage
+
+Don't forget to give the file the proper permissions (to execute), by using `chmod u+x dock-spacer.sh`
 
 `./dock-spacer` for one spacer. 
 
