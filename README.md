@@ -21,7 +21,7 @@ And then just run the script from the downloaded directory.
 
 # Usage
 
-Don't forget to give the file the proper permissions (to execute), by using `chmod u+x dock-spacer.sh`
+Don't forget to give the file the proper permissions (to execute), by using `chmod u+x dock-spacer.sh
 
 `./dock-spacer` for one spacer. 
 
