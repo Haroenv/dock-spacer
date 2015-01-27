@@ -39,9 +39,9 @@ if [[ "$argument" ]]; then
 		echo 
 		echo "usage: dock-spacer               add 1 spacer"
 		echo "   or: dock-spacer -n [number]   add a number of spacers"
+		echo "   or: dock-spacer -d            add a spacer to the documents (right) part"
+		echo "   or: dock-spacer -d [number]   add a number of spacers to the documents (right) part"
 		echo "   or: dock-spacer -h            display this message"
-				echo "   or: dock-spacer -d            add a spacer to the documents (right) part"
-				echo "   or: dock-spacer -d [number]   add a number of spacers to the documents (right) part"
 	fi
 else
 	echo "added a spacer"
