@@ -24,12 +24,12 @@ if [[ $argument ]]; then
 			if [[ "$2" ]]; then
 				echo "added $2 spacers"
 				for (( i = 0; i < $2; i++ )); do
-					defaults write com.apple.dock persistent-others -array-add '{"tile-type"="spacer-tile";}'
+					defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
 				done
 				killall Dock
 			else
 				echo "added a spacer"
-				defaults write com.apple.dock persistent-others -array-add '{"tile-type"="spacer-tile";}'
+				defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
 				killall Dock
 			fi
 			;;
