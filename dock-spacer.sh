@@ -20,19 +20,21 @@ if [[ "$argument" ]]; then
 			argument="-h"
 		fi
 	fi
-		if [[ "$argument" = "-d" ]]; then
-				if [[ "$2" ]]; then
-					echo "added $2 spacers"
-					for (( i = 0; i < $2; i++ )); do
-						defaults write com.apple.dock persistent-others -array-add '{"tile-type"="spacer-tile";}'
-					done
-					killall Dock
-				else
-					echo "added a spacer"
-					defaults write com.apple.dock persistent-others -array-add '{"tile-type"="spacer-tile";}'
-					killall Dock
-				fi
-			fi
+
+	if [[ "$argument" = "-d" ]]; then
+		if [[ "$2" ]]; then
+			echo "added $2 spacers"
+			for (( i = 0; i < $2; i++ )); do
+				defaults write com.apple.dock persistent-others -array-add '{"tile-type"="spacer-tile";}'
+			done
+			killall Dock
+		else
+			echo "added a spacer"
+			defaults write com.apple.dock persistent-others -array-add '{"tile-type"="spacer-tile";}'
+			killall Dock
+		fi
+	fi
+
 	argument="-h"
 	if [[ "$argument" = "-h" ]]; then
 		echo "dock-spacer 2.0 (27 jan 2015)"
