@@ -25,7 +25,11 @@ Don't forget to give the file the proper permissions (to execute), by using `chm
 
 `./dock-spacer` for one spacer. 
 
-`./dock-spacer -n 2` for 2. 
+`./dock-spacer -n 2` for 2.
+
+`./dock-spacer -d` for one documents (the right part) spacer
+
+`./dock-spacer -d 2` for two document spacers 
 
 `./dock-spacer -h` for help. 
 
