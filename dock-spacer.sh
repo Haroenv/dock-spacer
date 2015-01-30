@@ -9,39 +9,39 @@
 argument=$1
 if [[ $argument ]]; then
 	case $argument in
-		"-n" )
-			if [[ "$2" ]]; then
-				echo "added $2 spacers"
-				for (( i = 0; i < $2; i++ )); do
-					defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
-				done
-				killall Dock
-			elif [[ !"$2" ]]; then
-				argument="-h"
-			fi
-			;;
-		"-d" )
-			if [[ "$2" ]]; then
-				echo "added $2 spacers"
-				for (( i = 0; i < $2; i++ )); do
-					defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
-				done
-				killall Dock
-			else
-				echo "added a spacer"
+	"-n" )
+		if [[ "$2" ]]; then
+			echo "added $2 spacers"
+			for (( i = 0; i < $2; i++ )); do
+				defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+			done
+			killall Dock
+		elif [[ !"$2" ]]; then
+			argument="-h"
+		fi
+		;;
+	"-d" )
+		if [[ "$2" ]]; then
+			echo "added $2 spacers"
+			for (( i = 0; i < $2; i++ )); do
 				defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
-				killall Dock
-			fi
-			;;
-		* | "-h" )
-			echo "dock-spacer 2.0 (27 jan 2015)"
-			echo 
-			echo "usage: dock-spacer               add 1 spacer"
-			echo "   or: dock-spacer -n [number]   add a number of spacers"
-			echo "   or: dock-spacer -d            add a spacer to the documents (right) part"
-			echo "   or: dock-spacer -d [number]   add a number of spacers to the documents (right) part"
-			echo "   or: dock-spacer -h            display this message"
-			;;
+			done
+			killall Dock
+		else
+			echo "added a spacer"
+			defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
+			killall Dock
+		fi
+		;;
+	* | "-h" )
+		echo "dock-spacer 2.0 (27 jan 2015)"
+		echo 
+		echo "usage: dock-spacer               add 1 spacer"
+		echo "   or: dock-spacer -n [number]   add a number of spacers"
+		echo "   or: dock-spacer -d            add a spacer to the documents (right) part"
+		echo "   or: dock-spacer -d [number]   add a number of spacers to the documents (right) part"
+		echo "   or: dock-spacer -h            display this message"
+		;;
 	esac
 else
 	echo "added a spacer"
