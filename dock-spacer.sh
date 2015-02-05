@@ -36,7 +36,7 @@ if [[ $argument ]]; then
 		;;
 	"-t" )
 		echo "made hidden apps transparent"
-		defaults write com.apple.Dock showhidden -bool YES && killall Dock
+		defaults write com.apple.Dock showhidden -bool YES
 		killall Dock
 		;;
 	* | "-h" )
