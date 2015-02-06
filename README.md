@@ -31,7 +31,7 @@ Don't forget to give the file the proper permissions (to execute), by using `chm
 
 `./dock-spacer -d 2` for two document spacers 
 
-`./dock-spacer -t` to make hidden apps transparent
+`./dock-spacer -t` to make hidden apps transparent (note: not functional)
 
 `./dock-spacer -h` for help. 
 
