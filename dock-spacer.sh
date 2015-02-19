@@ -35,7 +35,7 @@ if [[ $argument ]]; then
 		fi
 		;;
 	"-t" )
-		echo "not yet functional"
+		echo "This works for Mavericks and lower."
 		echo "made hidden apps transparent"
 		defaults write com.apple.Dock showhidden -bool YES
 		killall Dock
