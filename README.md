@@ -35,6 +35,10 @@ Don't forget to give the file the proper permissions (to execute), by using `chm
 
 `./dock-spacer -v` to make hidden apps back regular
 
+`./dock-spacer -s` to enable scroll gestures in the Dock for exposé and opening folders
+
+`./dock-spacer -s d` to disable scroll gestures
+
 `./dock-spacer -h` for help.
 
 To remove a spacer, just drag it out of the dock.
