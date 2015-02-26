@@ -70,6 +70,7 @@ if [[ $argument ]]; then
 		else
 			echo "no settings changed"
 		fi
+		;;
 	* | "-h" )
 		echo "dock-spacer 3.0 (26 feb 2015)"
 		echo
