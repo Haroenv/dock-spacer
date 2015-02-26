@@ -5,8 +5,6 @@ Those commands will add a new spacer (and more, read the source for more info) t
 
 Tested on Yosemite, should be working for all versions from 10.5 and newer.
 
-The `-t` option only works on Mavericks and lower, Yosemite changed the way in which those `defaults` work
-
 # Installation
 
 Clone this directory with
@@ -33,7 +31,9 @@ Don't forget to give the file the proper permissions (to execute), by using `chm
 
 `./dock-spacer -d 2` for two document spacers
 
-`./dock-spacer -t` to make hidden apps transparent (note: does only work with Mavericks and lower)
+`./dock-spacer -t` to make hidden apps transparent
+
+`./dock-spacer -v` to make hidden apps back regular
 
 `./dock-spacer -h` for help.
 
