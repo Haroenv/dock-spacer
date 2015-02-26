@@ -59,8 +59,19 @@ if [[ $argument ]]; then
 			killall Dock
 		fi
 		;;
+	"-r" )
+		echo "this will reset all changes you made to Dock settings."
+		echo "do you want to continue? [Y/N]"
+		read continue
+		if [[ "$continue" == "y" || "$continue" == "Y" ]]; then
+			echo "reset all settings for the Dock"
+			defaults delete com.apple.dock
+			killall Dock
+		else
+			echo "no settings changed"
+		fi
 	* | "-h" )
-		echo "dock-spacer 2.0 (27 jan 2015)"
+		echo "dock-spacer 3.0 (26 feb 2015)"
 		echo
 		echo "usage: dock-spacer               add 1 spacer"
 		echo "   or: dock-spacer -n [number]   add a number of spacers"
@@ -70,6 +81,7 @@ if [[ $argument ]]; then
 		echo "   or: dock-spacer -v            make hidden apps regular"
 		echo "   or  dock-spacer -s            enable scroll gestures"
 		echo "   or  dock-spacer -s d          disable scroll gestures"
+		echo "   or  dock-spacer -r            reset all changes made to the Dock"
 		echo "   or: dock-spacer -h            display this message"
 		;;
 	esac

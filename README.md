@@ -39,6 +39,8 @@ Don't forget to give the file the proper permissions (to execute), by using `chm
 
 `./dock-spacer -s d` to disable scroll gestures
 
+`./dock-spacer -r` to reset all changes made to the Dock
+
 `./dock-spacer -h` for help.
 
 To remove a spacer, just drag it out of the dock.
