@@ -84,6 +84,11 @@ if [[ $argument ]]; then
 		echo "   or  dock-spacer -s d          disable scroll gestures"
 		echo "   or  dock-spacer -r            reset all changes made to the Dock"
 		echo "   or: dock-spacer -h            display this message"
+		# defaults write com.apple.dock single-app -bool TRUE; killall Dock # single app-mode, hides all apps that aren't the one clicked most recently on in the Dock
+		# defaults write com.apple.dock static-only -bool TRUE; killall Dock # show only open apps in the Dock
+		# defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"list-type" = 1;}; "tile-type" = "recents-tile";}'; killall Dock
+			# shows recently used app stack, changeapble by tile-type
+		# defaults write com.apple.dock mineffect suck; killall Dock # changes minimise effect to suck, genie or scale
 		;;
 	esac
 else
