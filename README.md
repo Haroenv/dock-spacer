@@ -9,13 +9,17 @@ This is tested on Yosemite, should be working for all versions from 10.5 and new
 
 Clone this directory with
 
-    git clone https://github.com/Haroenv/dock-spacer.git
+```sh
+git clone https://github.com/Haroenv/dock-spacer.git
+```
 
 Or download the zip, if you play that way.
 
 Another option is to `curl` the script
 
-    curl -o dock-spacer.sh https://raw.githubusercontent.com/Haroenv/dock-spacer/master/dock-spacer.sh
+```sh
+curl -o dock-spacer.sh https://raw.githubusercontent.com/Haroenv/dock-spacer/master/dock-spacer.sh
+```
 
 And then just run the script from the downloaded directory.
 
