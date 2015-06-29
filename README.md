@@ -23,25 +23,25 @@ And then just run the script from the downloaded directory.
 
 Don't forget to give the file the proper permissions (to execute), by using `chmod u+x dock-spacer.sh`
 
-`./dock-spacer` for one spacer.
+`./dock-spacer.sh` for one spacer.
 
-`./dock-spacer -n 2` for 2.
+`./dock-spacer.sh -n 2` for 2.
 
-`./dock-spacer -d` for one documents (the right part) spacer
+`./dock-spacer.sh -d` for one documents (the right part) spacer
 
-`./dock-spacer -d 2` for two document spacers
+`./dock-spacer.sh -d 2` for two document spacers
 
-`./dock-spacer -t` to make hidden apps transparent
+`./dock-spacer.sh -t` to make hidden apps transparent
 
-`./dock-spacer -v` to make hidden apps back regular
+`./dock-spacer.sh -v` to make hidden apps back regular
 
-`./dock-spacer -s` to enable scroll gestures in the Dock for exposé and opening folders
+`./dock-spacer.sh -s` to enable scroll gestures in the Dock for exposé and opening folders
 
-`./dock-spacer -s d` to disable scroll gestures
+`./dock-spacer.sh -s d` to disable scroll gestures
 
-`./dock-spacer -r` to reset all changes made to the Dock
+`./dock-spacer.sh -r` to reset all changes made to the Dock
 
-`./dock-spacer -h` for help.
+`./dock-spacer.sh -h` for help.
 
 To remove a spacer, just drag it out of the dock.
 
