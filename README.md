@@ -3,7 +3,7 @@ This is a wrapper for the defaults command
 `defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'` and others.
 Those commands will add a new spacer (and more, read the source for more info) to the OS X dock.
 
-This is tested on Yosemite, should be working for all versions from 10.5 and newer.
+This is tested on Yosemite and El Capitan, should be working for all versions from 10.5 and newer.
 
 # Installation
 
